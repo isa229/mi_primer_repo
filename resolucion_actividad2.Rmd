@@ -25,6 +25,12 @@ autos <- datasets::mtcars
 ```
 
 5. Filtre el objeto autos para obtener solo los automóviles que tienen más de 100 caballos de fuerza (hp).
+
+```{r}
+autos_mas_100hp <- autos |> 
+  filter(hp >100)
+```
+
 6. Ordene dichos automóviles de forma descendente según la potencia (hp).
 7. Seleccione únicamente las columnas mpg, hp y wt.
 8. Calcule el promedio de las millas por galón (mpg), la potencia (hp) y el peso (wt) para este conjunto de datos.
