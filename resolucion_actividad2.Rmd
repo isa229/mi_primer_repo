@@ -33,10 +33,16 @@ autos_mas_100hp <- autos |>
 6. Ordene dichos automóviles de forma descendente según la potencia (hp).
 
 ```{r}
-autos_mas_100hp |> 
+autos_ordenados <- autos_mas_100hp |> 
   arrange(desc(hp))
 ```
 
 7. Seleccione únicamente las columnas mpg, hp y wt.
+
+```{r}
+autos_seleccionados <- autos_ordenados |> 
+  select(mpg, hp, wt)
+```
+
 8. Calcule el promedio de las millas por galón (mpg), la potencia (hp) y el peso (wt) para este conjunto de datos.
 
